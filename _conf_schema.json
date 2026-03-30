@@ -1,0 +1,26 @@
+{
+    "web_port": {
+        "description": "Web服务端口（供MC端回调）",
+        "type": "int",
+        "default": 9090,
+        "hint": "Linux服务器上开放的端口"
+    },
+    "mc_bot_url": {
+        "description": "MC Bot的Web地址",
+        "type": "string",
+        "default": "http://Windows服务器IP:9091",
+        "hint": "MC端的Web服务地址"
+    },
+    "log_retention_days": {
+        "description": "日志保留天数",
+        "type": "int",
+        "default": 30,
+        "hint": "超过此天数的日志将被自动清理"
+    },
+    "clear_database": {
+        "description": "一键清除数据库",
+        "type": "bool",
+        "default": false,
+        "hint": "设置为true后保存配置将清空所有数据（慎用！）"
+    }
+}
